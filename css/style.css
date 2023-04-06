@@ -1,3 +1,61 @@
+.header{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:10px;
+  max-height:250px;
+  min-width:300px;
+  color:#eee;
+}
+
+#info1 {
+    height: 100%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+mark.theorem {
+    color:#323232;
+    background: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.header:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+  background-color: #4a566c;
+}
+.header:before{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background:#1B2030 50% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+.header a{
+  color:#eee
+}
+
 body {
     margin: 60px auto;
     width: 70%;
@@ -23,6 +81,12 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
+h2 {
+    font-size: 1.7em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
