@@ -60,6 +60,14 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+
+@media only screen and (max-device-width:1024px) and (orientation:landscape), only screen and (max-device-width : 768px) and (orientation : portrait){
+    body {
+        width: 90%;
+}
+}
+
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
